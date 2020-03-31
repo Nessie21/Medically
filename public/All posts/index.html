@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="../favicon.ico">
+    <title id='title'>Medically - All posts</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bellota:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-background">
+        <img src="../stetho.png" width="30" height="30">
+        <a class="navbar-brand mb-0 ml-2 h1" href="../index.html">Medically and more...</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="">Posty</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Interesting links/index.html">Linki</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../About me/index.html">O mnie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact" onclick='hand()'>Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <form action="../Create post/Creating.html">
+        <input type="submit" value="Stwórz post" class='createButton' />
+    </form>
+    <div class="contentAllPosts">
+        <div class='allposts'></div>
+    </div>
+
+    <a id="button"><i class="fas fa-arrow-up arrow"></i> </a>
+    <footer id='footer'>
+        <div class="contact">
+            <img id='hand' src="../hand.gif" alt="pointing hand" style='display: none;'>
+            <a href='https://twitter.com/medically_more' class="contact-icon icon-twitter fab fa-twitter"></a>
+            <a href='https://www.facebook.com/Medically-1116412411893296/'
+                class="contact-icon icon-fb fab fa-facebook-f"></a>
+            <a href='https://www.instagram.com/themedically/' class="contact-icon icon-instagram fab fa-instagram"></a>
+            <a href='https://github.com/Nessie21' class="contact-icon icon-github fab fa-github"></a>
+            <a href='https://www.linkedin.com/in/aganiemiec/' class="contact-icon icon-linkedin fab fa-linkedin"></a>
+            <a href='mailto:themedically@gmail.com' class="contact-icon icon-mail fas fa-envelope"></a>
+            <p id='footerYear'></p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-database.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyBd0yWjIveMNqK67uj7wtVwBB6y2a5aL-A",
+            authDomain: "medicallyandmore.firebaseapp.com",
+            databaseURL: "https://medicallyandmore.firebaseio.com",
+            projectId: "medicallyandmore",
+            storageBucket: "medicallyandmore.appspot.com",
+            messagingSenderId: "423213196031",
+            appId: "1:423213196031:web:c41ae90979157f451ba2ca",
+            measurementId: "G-WELGRBBKPM"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src='../main.js'></script>
+    <script src='main-allposts.js'></script>
+
+</body>
+
+</html>

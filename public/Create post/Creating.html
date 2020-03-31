@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="../favicon.ico">
+    <title id='title'>Medically - Create a post</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <h1 id='create'>Creating a post</h1>
+    <div>
+        <textarea id="title-input" placeholder='title' type="text"></textarea>
+
+        <textarea id="content" type="text" placeholder="Write a post"></textarea>
+
+        <input type="submit" id='submit' value="Submit" onclick='handleSubmit()'>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-database.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyBd0yWjIveMNqK67uj7wtVwBB6y2a5aL-A",
+            authDomain: "medicallyandmore.firebaseapp.com",
+            databaseURL: "https://medicallyandmore.firebaseio.com",
+            projectId: "medicallyandmore",
+            storageBucket: "medicallyandmore.appspot.com",
+            messagingSenderId: "423213196031",
+            appId: "1:423213196031:web:c41ae90979157f451ba2ca",
+            measurementId: "G-WELGRBBKPM"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="../main.js"></script>
+    <script src='main-create.js'></script>
+
+</html>
