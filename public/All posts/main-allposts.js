@@ -67,10 +67,10 @@ function displayPosts(allPosts) {
         const hr = document.createElement('HR');
         const editButton = document.createElement('i');
 
-        editButton.classList.add('far', 'fa-edit', 'edit');
+        editButton.classList.add('far', 'fa-edit', 'edit','hidden');
 
         const trashButton = document.createElement('i');
-        trashButton.classList.add('fas', 'fa-trash-alt', 'trash');
+        trashButton.classList.add('fas', 'fa-trash-alt', 'trash', 'hidden');
 
         postContainer.appendChild(paraTitle);
         postContainer.appendChild(paraContent);
