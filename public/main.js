@@ -133,8 +133,8 @@ function displayLastPost(allPosts) {
     date.innerHTML=newdate;
     last.appendChild(date);
 
-    if (fullText.length > 100) {
-      const shortText = fullText.substring(0, 100);
+    if (fullText.length > 200) {
+      const shortText = fullText.substring(0, 200) + '...';
       const showMoreButton = document.createElement('button');
       $(showMoreButton).addClass('showMoreButton');
       $(showMoreButton).addClass('showMoreButtonHome');

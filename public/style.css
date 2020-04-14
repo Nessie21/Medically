@@ -315,7 +315,7 @@ input {
 /*Facebook*/
 .fb-page {
   position: absolute;
-  left: 1355px;
+  left: 90%;
   top: 15px;
 }
 
@@ -401,7 +401,7 @@ HR {
 }
 
 .paraContent {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Frank Ruhl Libre', serif;
   font-size: 17px;
   color: black;
   text-align: justify;

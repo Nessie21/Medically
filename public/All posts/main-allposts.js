@@ -39,8 +39,8 @@ function displayPosts(allPosts) {
         date.innerHTML=newdate;
         postContainer.appendChild(date);
         
-        if (paraContent.innerText.length > 100) {
-            const shortText = paraContent.innerText.substring(0, 100);
+        if (paraContent.innerText.length > 200) {
+            const shortText = paraContent.innerText.substring(0, 200)+'...';
             const showMoreButton = document.createElement('button');
 
             $(showMoreButton).addClass('showMoreButton');
@@ -104,8 +104,8 @@ function displayPosts(allPosts) {
             paraContent.classList.add('paraContent');
             paraContent.innerText = post.content;
 
-            if (paraContent.innerText.length > 100) {
-                const shortText = paraContent.innerText.substring(0, 100);
+            if (paraContent.innerText.length > 200) {
+                const shortText = paraContent.innerText.substring(0, 200)+'...';
                 paraContent.innerText = shortText;
                 let showMoreButton = document.createElement('button');
                 showMoreButton.classList.add('showMoreButton');
@@ -180,19 +180,21 @@ function displayPosts(allPosts) {
         submitButton.addEventListener('click', function (event) {
             foundTitle.innerText = editTitleInput.value;
             foundContent.innerText = editContentInput.value;
-            const allPosts = getAllPosts();
-            const foundPost = allPosts.find(post => post.id === postId);
-            foundPost.title = editTitleInput.value;
-            foundPost.content = editContentInput.value;
-
-            foundContent.classList.remove('hidden');
-            foundTitle.classList.remove('hidden');
-
-            saveAllPosts(allPosts);
-
-            editTitleInput.remove();
-            editContentInput.remove();
-            submitButton.remove();
+            getAllPosts().then(allPosts => {
+                console.log(allPosts);
+                const foundPost = allPosts.find(post => post.id === postId);
+                foundPost.title = editTitleInput.value;
+                foundPost.content = editContentInput.value;
+    
+                foundContent.classList.remove('hidden');
+                foundTitle.classList.remove('hidden');
+    
+                saveAllPosts(allPosts);
+    
+                editTitleInput.remove();
+                editContentInput.remove();
+                submitButton.remove();
+            });
         });
     }
 }
