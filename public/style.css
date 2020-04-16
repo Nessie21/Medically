@@ -315,7 +315,7 @@ input {
 /*Facebook*/
 .fb-page {
   position: absolute;
-  left: 90%;
+  left: 1355px;
   top: 15px;
 }
 
@@ -499,6 +499,19 @@ HR {
 
 .showMoreButtonHome{
   top:21px;
+  position: absolute;
+  right: 115px;
+  width: 87px;
+  height: 23px;
+  font-family: 'Bellota', cursive;
+  font-size: 12px;
+  box-shadow: 0px 10px 14px -7px #276873;
+  background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+  background-color: #599bb3;
+  border-radius: 8px;
+  border-style: none;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .showMoreButton:hover {
@@ -558,4 +571,284 @@ HR {
   position: absolute;
   right: 90%;
 
+}
+
+@media (max-width: 400px){
+  .newPostGif{
+    right: 85%;
+    top:-11%;
+    width: 60px;
+    height: 50px;
+  }
+  .showMoreButtonHome {
+    top: 42px;
+    right:26%;
+    width: 128px;
+    height: 22px;
+}
+.dateHome {
+  top: -12%;
+  margin-left: 73%;
+}
+.lastPost{
+    width:80%;
+    top: -152px;
+    z-index: 0;
+
+}
+.heart-widget{
+display: none;
+    
+}
+#mc_embed_signup{
+    left: 0%;
+    top:230px;
+}    
+#mc-embedded-subscribe{
+    top:6px;
+    left:0%;
+}
+.paraContent{
+    text-align:left;
+}
+
+.container{
+    padding: 31px;
+}
+.showMoreButton{
+    top: 74px;
+    width:100px;
+    right: 113px;
+}
+.date{
+    top:6px;
+    margin-left:60%;
+}
+#pills{
+    left: 35%;
+    width: 70px;
+    height: 50px;
+    position: sticky;
+}
+#programming{
+    left: 35%;
+    width: 100px;
+    height: 100px;
+    position: sticky;
+}
+#hand{
+    width: 50px;
+    height: 30px;
+    right: -6%;
+    bottom: 59%;
+}
+#links{
+    padding-top: 10%;
+    padding: 1%;
+    text-align: center;
+}
+.text{
+    padding: 10px;
+}
+
+}
+@media screen and (min-width: 401px) and (max-width: 767px){
+.heart-widget{
+display:none;        
+    }
+.lastPost{
+    z-index:0;
+    width: 80%;
+}
+.newPostGif{
+    right: 85%;
+    top: -17%;
+}
+.showMoreButtonHome{
+    top:46px;
+    right:125px;
+}
+.dateHome{
+    top: -27px;
+    margin-left: 258px;
+}
+#mc_embed_signup{
+    left: 0%;
+    top:230px;
+}    
+#mc-embedded-subscribe{
+    top:6px;
+    left:0%;
+}
+.showMoreButton{
+    top: 49px;
+    width: 100px;
+    right: 170px;
+}
+.date{
+    top: -23px;
+    margin-left: 76%;
+
+}
+.paraContent{
+    text-align:left;
+}
+#pills{
+    left: 35%;
+    width: 70px;
+    height: 50px;
+    position: sticky;
+}
+#programming{
+    left: 35%;
+    width: 100px;
+    height: 100px;
+    position: sticky;
+}
+#hand{
+    width: 70px;
+    height: 50px;
+    right: -3%;
+    bottom: 52%;
+}
+#links{
+    padding-top: 10%;
+    padding: 1%;
+    text-align: center;
+}
+.text{
+    padding: 10px;
+}
+}
+@media (min-width: 768px) and (max-width: 1023px){
+
+.lastPost{
+    z-index:0;
+    width: 80%;
+}
+.newPostGif{
+    right: 87%;
+    top: -4%;
+}
+.showMoreButtonHome{
+    top: 19px;
+    right: 58px;
+}
+.dateHome{
+    top: -27px;
+    margin-left: 258px;
+}
+#mc_embed_signup{
+    left: 0%;
+    top:230px;
+}    
+#mc-embedded-subscribe{
+    top:6px;
+    left:0%;
+}
+.showMoreButton{
+    top: 22px;
+    width: 100px;
+    right: 91px;
+}
+.date{
+    top: 17px;
+    margin-left: 14%;
+
+}
+.paraContent{
+    text-align:left;
+}
+#pills{
+    left: 45%;
+    width: 70px;
+    height: 50px;
+    position: sticky;
+}
+#programming{
+    left: 45%;
+    width: 100px;
+    height: 100px;
+    position: sticky;
+}
+#hand{
+    width: 100px;
+    height: 80px;
+    right: 10%;
+    bottom: 27%;
+}
+#links{
+    padding-top: 10%;
+    padding: 1%;
+    text-align: center;
+}
+.text{
+    padding: 10px;
+}
+}
+@media (min-width: 1024px){
+
+.lastPost{
+    z-index:0;
+    width: 80%;
+}
+.newPostGif{
+    right: 91%;
+    top: -4%;
+}
+.showMoreButtonHome{
+    top: 23px;
+    right: 103px;
+}
+.dateHome{
+    top: 21px;
+    margin-left: 173px;
+}
+#mc_embed_signup{
+    left: 4%;
+    top:230px;
+}    
+#mc-embedded-subscribe{
+    top: 35px;
+    left: -214%;
+}
+.showMoreButton{
+    top: 26px;
+    width: 100px;
+    right: 168px;
+}
+.date{
+    top: 24px;
+    margin-left: 19%;
+
+}
+.paraContent{
+    text-align:left;
+}
+#pills{
+    left: 45%;
+    width: 70px;
+    height: 50px;
+    position: sticky;
+}
+#programming{
+    left: 45%;
+    width: 100px;
+    height: 100px;
+    position: sticky;
+}
+#hand{
+    width: 150px;
+    height: 130px;
+    right: 10%;
+    bottom: 7%;
+}
+#links{
+    padding-top: 10%;
+    padding: 1%;
+    text-align: center;
+}
+.text{
+    padding: 10px;
+}
 }
